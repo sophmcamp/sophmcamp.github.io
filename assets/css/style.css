@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Special+Elite&display=swap');
+
+:root {
+  font-size: 15px;
+}
+
+html {
+  padding: 0;
+  margin: 0 auto;
+  width: 85vw;
+  box-sizing: border-box;
+  overflow: scroll;
+  color: white;
+  background-color: rgb(8, 44, 54);
+}
+
+body {
+  font-family: 'Libre Franklin', sans-serif;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 40vw;
+  grid-template-areas:
+  "skip ."
+  "header header"
+  "main main"
+  "footer footer"
+}
+
+
+/* || Styles for sections in <body> */
+
+header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding-top: 1em;
+}
+
+main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  line-height: 1.75em;
+  background-color: rgb(10, 66, 85);
+  padding-top: 35px;
+  padding-bottom: 85px;
+  margin-top: 30px;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
+iframe {
+  max-width: 850px;
+  width: 100%;
+  height: 500px;
+}
+
+aside {
+  grid-area: aside;
+  margin-top: 50px;
+}
+
+footer {
+  grid-area: footer;
+  height: 20vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+
+/* || Heading styles */
+
+h1 {
+  grid-area: h1;
+  font-family: 'Special Elite', cursive;
+  font-size: 3.5em;
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  font-family: 'Libre Baskerville', serif;
+  padding-bottom: .5em;
+  font-size: 1.85em;
+}
+
+h3 {
+  font-family: sans-serif;
+  font-size: 1.5em;
+}
+
+h4 {
+  font-family: serif-serif;
+  font-style: italic;
+  font-size: 1.15em;
+  margin-left: 5px;
+}
+
+
+/* || Other styles */
+
+nav {
+  font-weight: 600;
+  text-align: left;
+  grid-area: nav;
+  font-size: 1.15em;
+}
+
+
+div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+   "article article";
+  max-width: 60vw;
+  min-height: 20vw;
+}
+
+article {
+  margin: 30px;
+}
+
+header img {
+  margin-top: 5px;
+}
+
+footer img {
+  width: 1.75em;
+}
+
+section a, h1 a, body > a {
+  color: white;
+  text-decoration: none;
+}
+
+section a {
+  font-size: 1.25em;
+  line-height: 1.75em;
+}
+
+nav a, p > a {
+  color: lightgray;
+}
+
+li {
+  display: inline;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+p {
+  font-family: sans-serif;
+  font-weight: lighter;
+  text-align: center;
+}
+
+article > p {
+  text-align: left;
+}
+
+.caption {
+  font-style: italic;
+}
+
+main > div {
+  margin-left: 8vw;
+  margin-right: 8vw;
+}
+
+#about-section {
+  display: inline;
+}
+
+#about-image {
+  float: left;
+  padding-right: 4vw;
+  padding-bottom: 4vw;
+  width: 20vw;
+}
+
+section {
+  display: grid;
+  padding-top: 5vh;
+  grid-template-columns: 20vw 20vw;
+  grid-template-areas:
+  "p p"
+  "p p";
+}
+
+section p {
+  font-family: serif;
+  border: 1px solid;
+  margin: 8px;
+  text-align: center;
+}
+
+#about-text {
+  font-size: 1.2em;
+}
+
+#home-image {
+  width: 65vw;
+}
+
+header ul, footer ul {
+  text-align: center;
+  padding: 0;
+}
+
+.skip-to-link {
+  grid-area: skip;
+  font-size: .5em;
+}
+
+.clear {
+  clear: both;
+}
+
+
+/* || Media queries */
+
+@media (max-width: 962px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "skip"
+    "header"
+    "main"
+    "footer";
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "h1"
+    "nav";
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  nav {
+    padding-top: .25em;
+  }
+  
+  div {
+    grid-template-columns: 1fr;
+    grid-template-areas: "article";
+  }
+  
+  div img {
+    width: 45vw;
+  }
+}
+
+@media (max-width: 542px) {
+  :root {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 500px) {
+  :root {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 430px) {
+  :root {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 360px) {
+  html {
+    width: 96vw;
+  }
+}
