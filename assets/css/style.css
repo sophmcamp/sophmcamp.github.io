@@ -173,6 +173,11 @@ main > div {
   display: inline;
 }
 
+
+#about-section p{
+  text-align: left;
+}
+
 #about-image {
   float: left;
   padding-right: 4vw;
@@ -183,8 +188,8 @@ main > div {
 #home-section {
   display: grid;
   padding-top: 5vh;
-  grid-template-columns: repeat(3, 20vw);
-  grid-template-areas: "p p p";
+  grid-template-columns: repeat(2, 20vw);
+  grid-template-areas: "p p";
 }
 
 #writing-section {
@@ -198,8 +203,6 @@ main > div {
 
 #writing-section img {
   margin: 0 auto;
-  padding-left: 10px;
-  padding-right: 10px;
   padding-bottom: 20px;
 }
 
@@ -221,7 +224,6 @@ section p {
   font-family: serif;
   border: 1px solid;
   margin: 8px;
-  text-align: center;
 }
 
 #about-text {
