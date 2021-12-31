@@ -180,11 +180,41 @@ main > div {
   width: 20vw;
 }
 
-section {
+#home-section {
   display: grid;
   padding-top: 5vh;
   grid-template-columns: repeat(3, 20vw);
   grid-template-areas: "p p p";
+}
+
+#writing-section {
+  display: grid;
+  padding-top: 5vh;
+  margin-left: 50px;
+  margin-right: 50px;
+  grid-template-rows: 10px, 10px;
+  grid-template-areas:
+  "div"
+  "div";
+}
+
+#writing-section img {
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+}
+
+#writing-section a {
+  font-family: monospace;
+  font-size: 1.3em;
+  margin-bottom: 70px;
+  color: black;
+  border: 3px solid;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 20px;
+  text-align: center;
+  max-height: 140px;
 }
 
 section p {
@@ -219,13 +249,12 @@ footer ul {
 }
 
 #hc {
-  width: 482px;
+  width: 25vw;
 }
 
 #CampS {
-  width: 194px;
+  width: 10vw;
 }
-
 
 /* || Media queries */
 
@@ -276,6 +305,10 @@ footer ul {
   
   #CampS {
     width: 20vw;
+  }
+
+  #writing-section a {
+    font-size: 1.1em;
   }
 }
 
