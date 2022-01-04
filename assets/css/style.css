@@ -132,12 +132,12 @@ main > div {
 }
 
 .poetry div {
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(2, 20vw) 1fr;
   grid-template-areas: "h3 h3 h3";
 }
 
-.poetry > h3 {
-  margin: 30px;
+.poetry h3 {
+  margin-left: 20px;
 }
 
 header img {
