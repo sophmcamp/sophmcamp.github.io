@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Special+Elite&display=swap');
 
 :root {
-  font-size: 15px;
+  font-size: 16px;
 }
 
 html {
@@ -33,7 +33,6 @@ header {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
-  padding-top: 1em;
 }
 
 main {
@@ -42,33 +41,10 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  line-height: 1.75em;
+  line-height: 1.5em;
   background-color: #132b42;
-  padding: 35px;
+  padding: 30px;
   margin: 10px;
-}
-
-.poetry-main p {
-  text-align: left;
-  line-height: normal;
-  line-break: strict;
-  margin: .5em;
-}
-
-#back {
-  align-self: flex-start;
-  color: white;
-}
-
-iframe {
-  max-width: 850px;
-  width: 100%;
-  height: 500px;
-}
-
-aside {
-  grid-area: aside;
-  margin-top: 50px;
 }
 
 footer {
@@ -100,30 +76,19 @@ h3 {
   font-size: 1.3em;
 }
 
-h4 {
-  font-family: serif-serif;
-  font-style: italic;
-  font-size: 1.15em;
-  margin-left: 5px;
-}
 
 /* || Other styles */
 
 nav {
   font-weight: 600;
   text-align: left;
-  grid-area: nav;
   font-size: 1em;
 }
 
 main > div {
   display: grid;
   max-width: 60vw;
-  min-height: 20vw;
-}
-
-.poetry-main > div > div {
-  margin: .75em;
+  min-height: 30vw;
 }
 
 .writing-main div {
@@ -131,13 +96,30 @@ main > div {
   grid-template-areas: "article article";
 }
 
+.poetry-main > div > div {
+  margin: .5em;
+}
+
+.poetry-main p {
+  text-align: left;
+  line-height: normal;
+  margin: .5em;
+}
+
 .poetry div {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "h3 h3 h3";
 }
 
-.poetry h3 {
-  margin: 1vw;
+#back {
+  align-self: flex-start;
+  color: white;
+}
+
+iframe {
+  max-width: 850px;
+  width: 100%;
+  height: 500px;
 }
 
 header img {
@@ -145,8 +127,8 @@ header img {
 }
 
 footer img {
-  width: 1.9em;
-  padding: .3em;
+  width: 2em;
+  padding: .25em;
 }
 
 section a,
@@ -177,19 +159,8 @@ p {
   text-align: center;
 }
 
-
-
-article > p {
-  text-align: left;
-}
-
 .caption {
   font-style: italic;
-}
-
-main > div {
-  margin-left: 8vw;
-  margin-right: 8vw;
 }
 
 #about-section {
@@ -220,8 +191,6 @@ main > div {
   padding-top: 50px;
   margin-left: 5vw;
   margin-right: 5vw;
-  grid-template-rows: 10px, 10px;
-
 }
 
 #writing-section a {
@@ -236,7 +205,6 @@ main > div {
   padding: 15px;
   margin-bottom: 8em;
 }
-
 
 section p {
   font-family: serif;
