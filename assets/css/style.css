@@ -45,7 +45,7 @@ main {
   justify-content: flex-start;
   line-height: 1.5em;
   background-color: #132b42;
-  padding: 25px;
+  padding: 15px;
   margin: 15px;
 }
 
@@ -91,7 +91,7 @@ nav {
 
 main > div {
   display: grid;
-  max-width: 60vw;
+  max-width: 80vw;
   min-height: 30vw;
 }
 
@@ -129,7 +129,7 @@ iframe {
 }
 
 footer img {
-  width: 2em;
+  width: 1.75em;
   padding: .25em;
 }
 
@@ -185,13 +185,14 @@ p {
 #home-section {
   display: grid;
   padding-top: 5vh;
-  grid-template-columns: repeat(2, 20vw);
+  padding-bottom: 5vh;
+  grid-template-columns: repeat(2, 40vw);
   grid-template-areas: "p p";
 }
 
 #writing-section {
   display: grid;
-  padding-top: 50px;
+  padding-top: 25px;
   margin-left: 5vw;
   margin-right: 5vw;
 }
@@ -206,7 +207,7 @@ p {
   font-family: monospace;
   font-size: .95em;
   padding: 15px;
-  margin-bottom: 8em;
+  margin-bottom: 5em;
 }
 
 section p {
@@ -321,7 +322,7 @@ footer ul {
 
 @media (max-width: 542px) {
   :root {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   footer img {
@@ -331,11 +332,11 @@ footer ul {
 
 @media (max-width: 500px) {
   :root {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   footer img {
-    width: 1.6em;
+    width: 1.7em;
 }
 
 .poetry div {
@@ -347,11 +348,11 @@ footer ul {
 
 @media (max-width: 430px) {
   :root {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   footer img {
-    width: 1.5em;
+    width: 1.6em;
     padding: .15em;
 }
 
@@ -361,6 +362,6 @@ footer ul {
   }
 
   footer img {
-    width: 1.4em;
+    width: 1.5em;
   }
 }
