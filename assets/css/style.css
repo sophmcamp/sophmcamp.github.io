@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@0;1&family=Cutive+Mono&family=Libre+Franklin&family=Special+Elite&display=swap');
 
 :root {
-  font-size: 18px;
+  font-size: 17.5px;
 }
 
 html {
@@ -178,9 +178,10 @@ p {
 
 #about-image {
   float: left;
+  padding-top: 4vw;
+  padding-bottom: 2vw;
   padding-right: 4vw;
-  padding-bottom: 4vw;
-  width: 20vw;
+  width: 28vw;
 }
 
 #home-section {
