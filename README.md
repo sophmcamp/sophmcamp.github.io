@@ -1,1 +1,1 @@
-# campsoph.github.io
+https://sophmcamp.github.io
