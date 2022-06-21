@@ -300,12 +300,10 @@ footer ul {
     width: 45vw;
   }
 
-  #square-one-background {
-    background-color: #ffffff;
-  }
 
   #square-one {
     width: 5vw;
+    background-color: #ffffff;
   }
 
   #hc {
