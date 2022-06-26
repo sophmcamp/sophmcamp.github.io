@@ -321,6 +321,7 @@ footer ul {
   footer img {
     width: 1.5em;
     padding: .2em;
+  }
 }
 
 @media (max-width: 500px) {
@@ -330,13 +331,12 @@ footer ul {
 
   footer img {
     width: 1.5em;
-}
+  }
 
 .poetry div {
   grid-template-columns: 1fr;
   grid-template-areas: "h3";
-}
-
+  }
 }
 
 @media (max-width: 430px) {
@@ -347,7 +347,7 @@ footer ul {
   footer img {
     width: 1.5em;
     padding: .15em;
-}
+  }
 }
 
 @media (max-width: 360px) {
