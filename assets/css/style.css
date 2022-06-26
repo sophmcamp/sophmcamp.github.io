@@ -228,7 +228,7 @@ section p {
   padding-top: 2em;
 }
 
-#square-one{
+#square-one {
   width: 15vw;
 }
 
@@ -299,8 +299,8 @@ footer ul {
     grid-template-areas: "article";
   }
 
-  div img {
-    width: 45vw;
+  #square-one {
+    width: 25vw;
   }
 
   #hc {
