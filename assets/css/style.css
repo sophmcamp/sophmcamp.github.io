@@ -228,8 +228,20 @@ section p {
   padding-top: 2em;
 }
 
-.image > img {
-  height: 10vw;
+#square-one{
+  width: 15vw;
+}
+
+#hc {
+  width: 25vw;
+}
+
+#CampS {
+  width: 10vw;
+}
+
+#sign {
+  width: 20vw;
 }
 
 header ul,
