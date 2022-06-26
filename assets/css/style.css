@@ -228,6 +228,10 @@ section p {
   padding-top: 2em;
 }
 
+.image > img {
+  height: 10vw;
+}
+
 header ul,
 footer ul {
   text-align: center;
@@ -243,19 +247,6 @@ footer ul {
 .clear {
   clear: both;
 }
-
-#hc {
-  width: 25vw;
-}
-
-#CampS {
-  width: 10vw;
-}
-
-#sign {
-  width: 20vw;
-}
-
 
 /* || Media queries */
 
