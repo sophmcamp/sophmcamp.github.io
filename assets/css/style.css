@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@0;1&family=Cutive+Mono&family=Libre+Franklin&family=Special+Elite&display=swap');
+
+:root {
+  font-size: 14.5px;
+}
+
+html {
+  padding: 0;
+  margin: 0 auto;
+  width: 97.5vw;
+  box-sizing: border-box;
+  overflow: scroll;
+  color: white;
+  background-color: #001529;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "skip ."
+    "header header"
+    "main main"
+    "footer footer";
+}
+
+/* || Styles for sections in <body> */
+
+header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  line-height: 1.5em;
+  background-color: #132b42;
+  padding: 15px;
+  margin: 15px;
+}
+
+footer {
+  grid-area: footer;
+}
+
+/* || Heading styles */
+
+h1 {
+  grid-area: h1;
+  font-family: "Special Elite", cursive;
+  font-size: 3.5em;
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  font-family: 'Cormorant Garamond', serif;
+  padding-bottom: 0.5em;
+  font-size: 2.15em;
+}
+
+h3 {
+  font-family: sans-serif;
+  font-size: 1.25em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+
+/* || Other styles */
+
+nav {
+  font-weight: 600;
+  text-align: left;
+  font-size: 1em;
+}
+
+main>div {
+  display: grid;
+  max-width: 80vw;
+  min-height: 30vw;
+}
+
+.writing-main div {
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "article article";
+}
+
+.poetry-main p {
+  text-align: left;
+  line-height: 1em;
+  margin: .4em;
+  font-size: 1.4em;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.poetry-main div {
+  margin-bottom: 1.5em;
+}
+
+.poetry div {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "h3 h3 h3 h3";
+}
+
+.poetry.two div {
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "div div";
+}
+
+#back {
+  align-self: flex-start;
+  color: white;
+}
+
+iframe {
+  max-width: 850px;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 2em;
+  overflow: scroll;
+}
+
+svg {
+  width: 1.5em;
+  padding: .25em;
+}
+
+section a,
+h1 a,
+body>a {
+  color: white;
+  text-decoration: none;
+}
+
+section a {
+  font-size: 1.25em;
+  line-height: 1.75em;
+}
+  
+h3 {
+  font-size: 1.25em;
+  padding-left: 2.5em;
+  padding-right: 2.5em;
+  text-align: center;
+  line-height: 1.25em;
+  font-weight: lighter;
+}
+
+h4 {
+  margin-bottom: 0;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+nav a,
+p>a,
+h3>a {
+  color: rgba(255, 255, 255, 0.932);
+}
+
+h3>a {
+  text-decoration: underline dotted;
+}
+
+li {
+  display: inline;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+p {
+  font-family: sans-serif;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.caption {
+  font-style: italic;
+}
+
+#about-section {
+  display: inline;
+}
+
+
+#about-section p {
+  text-align: left;
+  line-height: 1.5em;
+}
+
+#about-image {
+  float: left;
+  padding-bottom: 3em;
+  padding-top: 1.5em;
+  padding-right: 5vw;
+  width: 400px;
+}
+
+#home-section {
+  display: grid;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  grid-template-columns: repeat(2, 40vw);
+  grid-template-areas: "p p";
+}
+
+#writing-section {
+  display: grid;
+  padding-top: 15px;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  grid-template-columns: 1fr 1fr;
+}
+
+#writing-section a {
+  color: rgba(255, 255, 255, 1);
+}
+
+#writing-section p {
+  background-color: #b0d9ff5A;
+  border: 1.75px rgba(255, 255, 255, 0.65) solid;
+  font-family: monospace;
+  font-size: .85em;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 1.5em;
+}
+
+#writing-section p:hover {
+  background-color: #b0d9ff40;
+}
+
+a:hover {
+  color: #ffffffd4;
+}
+
+.empty {
+  fill: #ffffffff;
+}
+
+.empty:hover {
+  fill: #ffffffd4;
+}
+
+.filled {
+  fill: "none";
+}
+
+.filled path {
+  stroke: #ffffffff;
+}
+
+.filled:hover path {
+  stroke: #ffffffd4;
+}
+
+section p {
+  font-family: serif;
+  border: 1px solid;
+  margin: 8px;
+}
+
+#about-text {
+  font-size: 1.25em;
+  line-height: 1.75em;
+  ;
+}
+
+#home-image {
+  width: 75vw;
+  padding-top: 1.5em;
+}
+
+
+header ul,
+footer ul {
+  text-align: center;
+  padding: 0;
+}
+
+.skip-to-link {
+  grid-area: skip;
+  font-size: 0.0001em;
+  color: rgba(255, 255, 255, 0)
+}
+
+.clear {
+  clear: both;
+}
+
+/* || Media queries */
+
+@media (max-width: 962px) {
+    #about-image {
+    width: 80vw;
+  }
+  
+  body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "skip"
+      "header"
+      "main"
+      "footer";
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "h1"
+      "nav";
+  }
+
+  svg {
+    width: 1.5em;
+    padding: .25em;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  nav {
+    padding-top: 0.25em;
+  }
+
+  div {
+    grid-template-columns: 1fr;
+    grid-template-areas: "article";
+  }
+  
+  #about-section {
+    display: grid;
+  }
+
+  #writing-section a {
+    font-size: 1.15em;ƒ
+  }
+
+  .poetry div,
+  .poetry.two div {
+    padding-bottom: 2em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "h3 h3";
+  }
+}
+
+@media (max-width: 542px) {
+  :root {
+    font-size: 16px;
+  }
+
+  svg {
+    width: 1.5em;
+    padding: .2em;
+  }
+}
+
+@media (max-width: 500px) {
+  :root {
+    font-size: 14px;
+  }
+
+  svg {
+    width: 1.5em;
+  }
+
+  .poetry div,
+  .poetry.two div {
+    grid-template-columns: 1fr;
+    grid-template-areas: "h3";
+  }
+
+  #writing-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 430px) {
+  :root {
+    font-size: 12px;
+  }
+
+  svg {
+    width: 1.5em;
+    padding: .15em;
+  }
+}
+
+@media (max-width: 360px) {
+  html {
+    width: 96vw;
+  }
+
+  svg {
+    width: 1.5em;
+  }
+}
