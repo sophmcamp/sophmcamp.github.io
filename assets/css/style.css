@@ -11,12 +11,13 @@ html {
   box-sizing: border-box;
   overflow: scroll;
   color: white;
-  background-color: #001529;
+  background-color: #132b42;
+  background-image: url('assets/images/humpbackrock.jpeg');
 }
 
 body {
   font-family: "Libre Franklin", sans-serif;
-  margin: 0 auto;
+  background-color: #001529;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
@@ -44,8 +45,6 @@ main {
   align-items: center;
   justify-content: flex-start;
   line-height: 1.5em;
-/*   background-color: #132b42; */
-  background-image: url('assets/images/humpbackrock.jpeg');
   padding: 15px;
   margin: 15px;
 }
