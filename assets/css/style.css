@@ -22,7 +22,7 @@ html {
 
 body {
   font-family: "Libre Franklin", sans-serif;
-  opacity: 0.75;
+  opacity: 0.9;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
@@ -258,6 +258,7 @@ a:hover {
 
 .filled {
   fill: "none";
+  fill-opacity: 0;
 }
 
 .filled path {
