@@ -109,13 +109,8 @@ main>div {
 }
 
 .poetry div {
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-areas: "h3 h3 h3 h3";
-}
-
-.poetry.two div {
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "div div";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "h3 h3 h3";
 }
 
 #back {
@@ -230,8 +225,7 @@ p {
 #writing-section p {
   background-color: #b0d9ff5A;
   border: 1.75px rgba(255, 255, 255, 0.65) solid;
-  font-family: monospace;
-  font-size: .85em;
+  font-size: 1em;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 10px;
@@ -352,8 +346,7 @@ footer ul {
     font-size: 1.15em;ƒ
   }
 
-  .poetry div,
-  .poetry.two div {
+  .poetry div {
     padding-bottom: 2em;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "h3 h3";
@@ -380,8 +373,7 @@ footer ul {
     width: 1.5em;
   }
 
-  .poetry div,
-  .poetry.two div {
+  .poetry div {
     grid-template-columns: 1fr;
     grid-template-areas: "h3";
   }
