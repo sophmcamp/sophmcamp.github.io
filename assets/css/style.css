@@ -44,7 +44,8 @@ main {
   align-items: center;
   justify-content: flex-start;
   line-height: 1.5em;
-  background-color: #132b42;
+/*   background-color: #132b42; */
+  background-image: url('assets/images/humpbackrock.jpeg');
   padding: 15px;
   margin: 15px;
 }
