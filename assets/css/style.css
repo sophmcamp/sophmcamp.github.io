@@ -12,11 +12,17 @@ html {
   overflow: scroll;
   color: white;
   background-color: #132b42;
-  background-image: url('assets/images/humpbackrock.jpeg');
+  background-image: url('../images/nightsky.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  background-position: center;
+  
 }
 
 body {
   font-family: "Libre Franklin", sans-serif;
+  opacity: 0.75;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
@@ -40,7 +46,7 @@ header {
 main {
   grid-area: main;
   display: flex;
-    background-color: #001529;
+  background-color: #001529;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
