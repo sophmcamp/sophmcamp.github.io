@@ -223,8 +223,9 @@ p {
 }
 
 #writing-section p {
-  background-color: #b0d9ff5A;
-  border: 1.75px rgba(255, 255, 255, 0.65) solid;
+  background-color: #b0d9ff40;
+  border: 2px rgba(255, 255, 255, 0.65) solid;
+  font-family: sans-serif;
   font-size: 1em;
   padding-left: 15px;
   padding-right: 15px;
@@ -234,7 +235,7 @@ p {
 }
 
 #writing-section p:hover {
-  background-color: #b0d9ff40;
+  background-color: #b0d9ff1d;
 }
 
 a:hover {
