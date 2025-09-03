@@ -16,7 +16,7 @@ html {
   background-size: cover;
   height: 100%;
   background-position: center;
-  
+
 }
 
 body {
@@ -147,7 +147,7 @@ section a {
   font-size: 1.25em;
   line-height: 1.75em;
 }
-  
+
 h3 {
   font-size: 1.25em;
   padding-left: 2.5em;
@@ -305,10 +305,10 @@ footer ul {
 /* || Media queries */
 
 @media (max-width: 962px) {
-    #about-image {
+  #about-image {
     width: 80vw;
   }
-  
+
   body {
     display: grid;
     grid-template-columns: 1fr;
@@ -344,7 +344,7 @@ footer ul {
     grid-template-columns: 1fr;
     grid-template-areas: "article";
   }
-  
+
   #about-section {
     display: grid;
   }
