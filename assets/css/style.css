@@ -25,6 +25,7 @@ body {
   opacity: 0.9;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr 1fr auto;
   grid-template-areas:
     "skip ."
     "header header"
